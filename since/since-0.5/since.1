@@ -1,0 +1,95 @@
+.TH SINCE 1 "JULY 1998" Linux "User Manuals"
+.SH NAME
+since \- display content of a file since the last time
+.SH SYNOPSIS
+.B since [-hnqvx]
+.I files
+.SH DESCRIPTION
+.B since
+is similar to
+.B tail
+since it also displays the tail of a file. However
+.B since
+displays only the data which has been added since the last time
+.B since
+was run. If
+.B since
+has not been run before the entire
+file is displayed.
+.B since
+is useful for watching over log files.
+.SH EXAMPLE
+.B since /var/log/apache/{access,error}_log > /dev/null
+.br
+.B lynx --dump http://localhost/ > /dev/null
+.br
+.B since /var/log/apache/{access,error}_log
+.SH OPTIONS
+.IP -h
+Print a terse help message.
+.IP -n
+Do not update the
+.I .since
+file which keeps track of file growth.
+.IP -q
+Decrease the verbosity of the output.
+.IP -v
+Increase the verbosity of the output.
+.IP -x
+Exclude files with compressed extensions.
+.SH FILES
+.I .since
+.RS
+File recording the length of the files displayed previously.
+The location of the file can be set by using the
+.B SINCE
+environment variable, for example 
+.B export SINCE=
+.I /var/log/sincefile
+will tell
+.B since
+to use the file 
+.I /var/log/sincefile.
+If the 
+.B SINCE
+environment variable has not been set 
+.B since 
+will use the 
+.B HOME 
+environment variable and store the information in the file
+.B .since 
+in the directory pointed to by the variable. If neither the 
+.B SINCE
+nor the 
+.B HOME
+variable are set
+.B since
+will use the file
+.I /tmp/since.
+.RE
+.SH BUGS
+.B since
+will break when used across NFS on architectures which have different
+st_* field sizes.
+.B since
+uses the inode of a file as its key, if that inode is recycled
+.B since
+might get confused. 
+.B since
+is not particularly efficient when storing the
+.BI stat()
+information, but should work reasonably well unless you plan to look at 
+thousands of files. Functionality equivalent to
+.B since
+can probably be achieved with a number of trivial
+shell scripts.
+.SH "COPYING"
+.B since
+may only be used, distributed and modified in accordance with
+the terms of the
+.B GPL (GNU General Public License)
+as published by the
+.B FSF (Free Software Foundation).
+.SH "SEE ALSO"
+.BR tail (1),
+.BR stat (2).

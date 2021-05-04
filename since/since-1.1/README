@@ -1,0 +1,51 @@
+Since
+-----
+
+since is a tail(1) with state - it allows the user to
+view only the lines appended to a file since the last
+time since was used.
+
+Installation
+------------
+
+To build the executable type:
+
+    make
+
+To install the executable and manual page, become root and type:
+
+    make install
+
+The default locations are:
+
+    /usr/local/bin/since
+    /usr/local/share/man/man1/since.1
+
+To change the install location use the prefix variable:
+
+  make prefix=/usr install
+
+Use
+---
+
+To understand how since works run the following commands:
+  
+    make
+    echo "First line" >> testlogfile
+    ./since testlogfile
+    echo "Second line" >> testlogfile
+    ./since testlogfile
+    rm testlogfile
+
+I find it useful to add aliases such as the following to my
+.bashrc file
+
+    alias dosince='since /var/log/{messages,syslog,mail.log}'
+
+Other
+-----
+
+The since homepage is http://welz.org.za/projects/since
+
+Since is released under the terms of the GNU public license
+version 3 or newer, as set out in the file COPYING.

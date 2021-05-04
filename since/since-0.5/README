@@ -1,0 +1,42 @@
+Since
+-----
+
+since is a tail(1) with state - it allows the user to
+view only the lines appended to a log file since the last
+time since was used.
+
+Installation Instructions
+-------------------------
+
+To build the executable type:
+
+    make
+
+To copy the executable and manual page, become root and type:
+
+    make install
+
+The default locations are:
+
+    /usr/local/bin/since
+    /usr/local/man/man1/since.1
+
+Use
+---
+
+To understand how it works run the commands:
+  
+    make
+    echo "First line" >> testlogfile
+    ./since testlogfile
+    echo "Second line" >> testlogfile
+    ./since testlogfile
+    rm testlogfile
+
+You might want to set up the following alias:
+
+    alias dosince='since /var/log/messages /var/log/xferlog'
+
+Since is released under the terms of the GNU public
+license. Click accept now... errr... sorry... just
+look at COPYING.
