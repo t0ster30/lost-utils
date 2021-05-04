@@ -7,10 +7,15 @@ Following example of a parabolic plot shows the required format of the data-text
 
 2 5
  0 0
+ 
  1 1
+ 
  2 4
+ 
  3 9
+ 
  4 16
+ 
 
 The first two figures show the amount of data (2 colums, 5 values) - don't forget to add them.
 
