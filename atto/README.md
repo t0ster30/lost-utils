@@ -1,6 +1,6 @@
 #Homepage of ATTO
-##by Dieter Schoppitsch - (December 2002)
-
+> by Dieter Schoppitsch - (December 2002)
+---
 Atto is a simple, fast (doesn't need ncurses) and small (<16k) line editor.
 Nevertheless it provides features like a buffer, search&replace;, an ascii table and a simple hex dumper.
 
