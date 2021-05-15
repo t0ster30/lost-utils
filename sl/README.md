@@ -1,5 +1,5 @@
 sl
----
+-
 sl takes the most common use of Unix ls, to display the files in a directory compactly in multiple columns, and makes it substantially more useful.
 
 sl groups files by purpose so you can mentally organize many files quickly; for instance, it collects HTML and PHP files together, as opposed to leaving them mixed up with supporting images, CSS, and JavaScript. sl points out interesting files, which include those that have been recently modified, read relatively recently, are relatively large, have warnings, or need to be checked in to or out of version control.
@@ -7,7 +7,7 @@ sl groups files by purpose so you can mentally organize many files quickly; for 
 sl is also aesthetically pleasing due to attention to layout and filtering as well as limiting color and text annotations to salient information.
 
 Screen Shots
----
+-
 ls vs sl on WWW site:
 
 ![WWW](img/sl-1.png )
@@ -23,7 +23,7 @@ sl on a collection (photos, audio, video, even apps):
 On this directory of music, which is managed by iTunes, we see all the albums by an artist. sl also shows /number of songs in each album, the relatively recent CD rips (which not coincidentally correspond to the latest two albums), which we ripped about 2 months ago (58 days) and 7 months ago (228 days). The summary line at bottom shows the total number of CDs and the (total number) of songs. Note that the directories were determined to hold audio material, and sorting works as it should with inital "The"s ignored. This display is useful for other kinds of hierarchy.
 
 Features
----
+-
     sort
         group by purpose to organize and make understandable so many files (like Apple II catalog arrangers, but automatically)
         For subdirectories, look at the files they contain and if warranted reclassify directory into image, audio, or video group.
@@ -72,7 +72,7 @@ for OS X, Solaris, Unix, and GNU/Linux
 Licensed under the GNU Public License version 3. NO WARRANTY.
 
 Install:
-
+-
     Download software, probably to /usr/local/bin or ~/bin.
         v1.1.2 of February 16. Support filenames that are not UTF-8 and not ASCII (thanks Christian Neukirchen).
         v1.1 of February 12. Support file sizes larger than 4GB on 32-bit systems (thanks Giuseppe Merigo), tightened tolerances, new feature: autosearch.
@@ -96,7 +96,7 @@ Convenience: Automatically see an overview and interesting files when switching 
     alias pdo 'pushd \!*; sl -only'
 
 Customization
-
+-
 Customization is done via a startup file, at the path ~/.sl.tcl. You can control colors, new suffixes, localization of the most used text, switches that control system operation, and even exactly what is shown for every file. For example, here's a custom color scheme that makes files and directories brighter and blends the text annotations into the background.
 
 The startup file is executed as Tcl code, so you can implement substantial changes, such as adding support for another version control system. Rather than hacking the source code, it is better to put customizations in the startup file so that you can easily update to new versions without reapplying your hacks. Tcl lets you go so far as redefining whole procedures, so any change you want can be done in the startup file.
@@ -104,7 +104,7 @@ The startup file is executed as Tcl code, so you can implement substantial chang
     .sl.tcl sample startup file, download to your home directory. It shows how to make many of the most likely changes, as well as how to turn on features that are too mind blowing to be the default settings, including prefix and suffix elision. 
 
 Support
-
+-
 Troubleshooting:
 
     If you see lots of garbage that looks like ^[[31m, enable color for your terminal or turn off color in your startup file.
@@ -114,10 +114,10 @@ Troubleshooting:
     Previously, transposing the letters of ls was a misspelling. In some systems, it resulted in a Command not found error. Some shells prepared for this and aliased the transposition and other misspellings to in effect autocorrect to what the user meant to type. If the output still looks like ls, it's probably an alias. You can unalias in open terminals and take out the line in the shell startup file. In another case, a Linux distribution surprised you with ASCII art of a train. You can delete it, or if an ASCII train is a key part of your problem-solving toolkit you can rename it. 
 
 Known bugs:
-
+-
     On OS X, the Spotlight search engine indexes the contents of files. As a side effect of reading the content of a file, the file system updates the file's last accessed time (atime). Because Spotlight is continuously indexing, often within seconds of a file being changed, almost all files have very recent atimes. For sl, this makes the atime useless for showing recently accessed files: because everybody's special, nobody's special. Spotlight should consider its work to be stealthy and reset the atime.
     Some file systems do not update atime, which is used to determine recently read files. 
 
-Send suggestions and bug reports to
-
-Invented by Tom Phelps on December 30, 2011.
+> Send suggestions and bug reports to
+>
+> Invented by Tom Phelps on December 30, 2011.
