@@ -6,8 +6,8 @@ sl groups files by purpose so you can mentally organize many files quickly; for 
 
 sl is also aesthetically pleasing due to attention to layout and filtering as well as limiting color and text annotations to salient information.
 Screen Shots
-ls vs sl on WWW site:
-![](sl-1.png)
+
+![meow :3](sl-1.png "ls vs sl on WWW site:")
 
 sl on a software development directory:
 
