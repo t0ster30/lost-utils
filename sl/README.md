@@ -14,10 +14,16 @@ ls vs sl on WWW site:
 
 sl on a software development directory:
 
-sl on a collection (photos, audio, video, even apps):
-On this directory of music, which is managed by iTunes, we see all the albums by an artist. sl also shows /number of songs in each album, the relatively recent CD rips (which not coincidentally correspond to the latest two albums), which we ripped about 2 months ago (58 days) and 7 months ago (228 days). The summary line at bottom shows the total number of CDs and the (total number) of songs. Note that the directories were determined to hold audio material, and sorting works as it should with inital "The"s ignored. This display is useful for other kinds of hierarchy.
-Features
+![meow again  :3](sl-2.png)
 
+sl on a collection (photos, audio, video, even apps):
+
+![meow repeats… :|](sl-3.png)
+
+On this directory of music, which is managed by iTunes, we see all the albums by an artist. sl also shows /number of songs in each album, the relatively recent CD rips (which not coincidentally correspond to the latest two albums), which we ripped about 2 months ago (58 days) and 7 months ago (228 days). The summary line at bottom shows the total number of CDs and the (total number) of songs. Note that the directories were determined to hold audio material, and sorting works as it should with inital "The"s ignored. This display is useful for other kinds of hierarchy.
+
+Features
+---
     sort
         group by purpose to organize and make understandable so many files (like Apple II catalog arrangers, but automatically)
         For subdirectories, look at the files they contain and if warranted reclassify directory into image, audio, or video group.
