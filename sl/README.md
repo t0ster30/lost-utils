@@ -10,15 +10,15 @@ Screen Shots
 ---
 ls vs sl on WWW site:
 
-![meow :3](img/sl-1.png )
+![WWW](img/sl-1.png )
 
 sl on a software development directory:
 
-![meow again  :3](img/sl-2.png)
+![C](img/sl-2.png)
 
 sl on a collection (photos, audio, video, even apps):
 
-![meow repeats… :|](img/sl-3.png)
+![music](img/sl-3.png)
 
 On this directory of music, which is managed by iTunes, we see all the albums by an artist. sl also shows /number of songs in each album, the relatively recent CD rips (which not coincidentally correspond to the latest two albums), which we ripped about 2 months ago (58 days) and 7 months ago (228 days). The summary line at bottom shows the total number of CDs and the (total number) of songs. Note that the directories were determined to hold audio material, and sorting works as it should with inital "The"s ignored. This display is useful for other kinds of hierarchy.
 
