@@ -5,8 +5,9 @@ sl takes the most common use of Unix ls, to display the files in a directory com
 sl groups files by purpose so you can mentally organize many files quickly; for instance, it collects HTML and PHP files together, as opposed to leaving them mixed up with supporting images, CSS, and JavaScript. sl points out interesting files, which include those that have been recently modified, read relatively recently, are relatively large, have warnings, or need to be checked in to or out of version control.
 
 sl is also aesthetically pleasing due to attention to layout and filtering as well as limiting color and text annotations to salient information.
-Screen Shots
 
+Screen Shots
+---
 ls vs sl on WWW site:
 
 ![meow :3](sl-1.png )
