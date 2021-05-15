@@ -1,4 +1,4 @@
-#sl
+sl
 ---
 sl takes the most common use of Unix ls, to display the files in a directory compactly in multiple columns, and makes it substantially more useful.
 
