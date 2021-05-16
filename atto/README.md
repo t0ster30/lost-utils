@@ -1,4 +1,5 @@
-#Homepage of ATTO
+Homepage of ATTO
+-
 > by Dieter Schoppitsch - (December 2002)
 ---
 Atto is a simple, fast (doesn't need ncurses) and small (<16k) line editor.
