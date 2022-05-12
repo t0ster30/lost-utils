@@ -1,4 +1,4 @@
-#Homepage of C
+# Homepage of C
 > by Dieter Schoppitsch - (May 2004)
 ---
 C is a simple and tiny scientific RPN-Calculator. It tries to minimizethe necessary keystrokes.
