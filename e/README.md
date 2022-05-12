@@ -1,6 +1,10 @@
 ![e](logo.gif)
 a tiny expression evaluator
 -
+author
+-
+Dimitromanolakis Apostolos
+
 about e
 -
 Some time ago while I was doing some homework for my university class, I needed a quick way to evaluate expressions, while I was typing at the command prompt. I found two solutions, using bc or gnuplot. bc has fixed precision which defaults to 0, so to evaluate an expression involving decimal results you need to issue a command like "scale=5" beforehand. On the other hand using gnuplot (and bc if it matters) involves loading the executable, evaluating your expression using the "print" command and quitting using the "quit" command. I needed something quicker..
